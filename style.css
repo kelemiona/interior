@@ -1,0 +1,785 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,500,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: white;
+}
+.container {
+    width: 1366px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.padding-site {
+    padding-left: 98px;
+    padding-right: 98px;
+}
+
+.button {
+    color: #212121;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 212px;
+    height: 45px;
+    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+    border-radius: 23px;
+    border-color: #fff;
+    text-align: center;
+    line-height: 45px;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 3.6px;
+    opacity: 0.9;
+}
+
+.button:hover {
+    opacity: 1;
+    font-size: 19px;
+}
+/*Шапка сайта*/
+/*Слайдер*/
+.slider {
+    height: 800px;
+    position: relative;
+}
+
+.nav-slider {
+    background-image: url(img/slidebar.png);
+}
+
+/*Меню в слайдере*/
+
+.menu-header .logo a,
+.slider-header .logo a {
+    float: left;
+    margin-top: 64px;
+}
+
+.slider-header {
+    height: 90px;
+}
+
+.menu {
+    float: right;
+    margin-right: 69px;
+    margin-top: 64px;
+}
+
+.menu-list,
+.breadcrumbs-links, 
+.breadcrumbs-details-links  {
+    list-style-type: none;
+    float: left;
+    text-transform: uppercase;
+    padding-left: 13px;
+    padding-right: 13px;
+
+}
+
+.menu-list a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;
+    color: #8c8c8c;
+    letter-spacing: 1.4px;
+}
+
+.menu-list a:hover,
+.breadcrumbs-links a:hover {
+    color: #212121;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #212121;
+}
+
+.menu ul .active a {
+    font-weight: bold;
+    color: #000;
+}
+
+.menu ul .active,
+.breadcrumbs ul .active  {
+    padding-bottom: 4px;
+    border-bottom: 3px solid #212121;
+}
+
+.breadcrumbs-details {
+    height: 70px;
+    background-color: #f4f4f4;
+}
+.breadcrumbs-details ul .active  {
+    padding-bottom: 4px;
+}
+.breadcrumbs-details-links a:hover {
+    color: #212121;
+}
+/*Шапка сайта страница контакты*/
+.header-contact {
+    height: 360px;
+    background-color: #f5f5f5;
+}
+
+.header-details {
+    height: 120px;
+}
+
+.header-contact h3 {
+    font-weight: 100;
+    font-size: 58px;
+    color: #212121;
+    margin-top: 150px;
+}
+
+/*Хлебные крошки*/
+.breadcrumbs {
+    margin-top: 60px;
+}
+
+.breadcrumbs-links a,
+.breadcrumbs-details-links a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: #8c8c8c;
+}
+
+.breadcrumbs ul .active a {
+    color: #000;
+}
+.breadcrumbs-details {
+    position: relative;
+}
+.breadcrumbs-details ul {
+    top: 28px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/*Продукты обновление*/
+.image-loading a img{
+    margin-top: 30px;
+}
+.image-loading a {
+    display: block;
+    text-align: center;
+    opacity: 0.8;
+}
+.image-loading a:hover {
+    opacity: 1;
+}
+/*Контент слайдер*/
+.nav-slider .slider-text {
+    
+    position: absolute;
+    top: 372px;
+    width: 458px;
+}
+
+.slider-text {
+    position: absolute;
+    top: 282px;
+    width: 458px;
+}
+
+.slider-tag {
+    text-transform: uppercase;
+    color: #43a047;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.slider-name {
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 58px;
+}
+
+.slider-details {
+    font-size: 14px;
+    color: #6c6c6c;
+    line-height: 24px;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    box-shadow: none;
+    line-height: 18px;
+}
+
+.button img {
+    padding-left: 21px;
+}
+
+.btn img {
+    padding-left: 12px;
+}
+
+/*Pagination*/
+
+.circle {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-color: #c7c7c7;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.circle-active {
+    width: 40px;
+    height: 40px;
+    background-color: #212121;
+    margin-bottom: 0;
+}
+
+.pagination {
+    position: absolute;
+    width: 1170px;
+    bottom: 19px;
+    text-align: center;
+}
+
+.circle:hover {
+    background-color: #212121;
+}
+
+/*Контент*/
+
+/*Описание, тег, имя, описание*/
+.tag {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.name {
+    font-size: 36px;
+    font-weight: bold;
+    color: #212121;
+}
+
+.description {
+    font-size: 14px;
+    font-weight: 300;
+    color: #6c6c6c;
+}
+
+/*Рекомендуемые продукты*/
+.feautured-product {
+    height: 608px;
+}
+
+.controll {
+    height: 168px;
+}
+
+.controll ul li {
+    margin-top: 120px;
+    list-style-type: none;
+    float: left;
+}
+
+.controll ul li a {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: none;
+    font-size: 36px;
+    line-height: 36px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    color: #6c6c6c;
+    border-bottom: 1px solid #6c6c6c;
+}
+
+.controll .active a {
+    color: #212121;
+    border-bottom: 3px solid #212121;
+}
+
+.controll ul li a:hover {
+    color: #212121;
+}
+
+.controll .button {
+    float: right;
+    height: 30px;
+    margin-top: 138px;
+}
+
+.products-small-margin {
+    margin-bottom: 90px;
+    margin-top: 50px;
+}
+
+.product-small {
+    float: left;
+    height: 270;
+    width: 270px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.product-small:nth-child(4n+1) {
+    margin-left: 0;
+}
+
+/*Наведение на товар из рекомендованного*/
+.product-small:hover .product-small-hover {
+    display: block;
+}
+
+.product-small-hover {
+    position: absolute;
+    top: 0;
+    width: 270px;
+    height: 270px;
+    background-color: #fcfcfc;
+    border: 1px solid #a1a1a2;
+    opacity: 0.902;
+}
+
+.button-small {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+    border-radius: 50%;
+    border-color: #fff;
+    text-align: center;
+    line-height: 48px;
+    margin-top: 60px;
+    margin-left: 108px;
+}
+
+.product-small-hover-h3 {
+    width: 270px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    color: #212121;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.product-small-hover-description {
+    color: #6c6c6c;
+    font-size: 14px;
+    width: 270px;
+    text-align: center;
+    font-weight: 300;
+}
+
+/*Промо*/
+.promo {
+    height: 683px;
+}
+
+.promo-product {
+    float: left;
+    height: 683px;
+    width: 683px;
+    position: relative;
+}
+
+.promo-content {
+    width: 400px;
+    position: absolute;
+    top: 227px;
+    left: 50px;
+}
+
+.promo-tag {
+    color: #1e88e5;
+}
+
+.promo-name {
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+.promo-description {
+    margin-bottom: 30px;
+}
+
+.promo-product:hover .promo-content {
+    display: block;
+}
+
+/*Тренды*/
+.trending-product {
+    margin-bottom: 120px;
+}
+
+.controll h3 {
+    font-size: 36px;
+    color: #212121;
+    font-weight: bold;
+    margin-top: 120px;
+    float: left;
+}
+
+.trending-product-container {
+    margin-top: 50px;
+    margin-bottom: 90px;
+}
+
+.trending-product-small {
+    float: left;
+    width: 370px;
+    height: 370px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.trending-product-small:nth-child(3n+1) {
+    margin-left: 0;
+}
+
+/*Слайдер 2*/
+.slider-content {
+    height: 800px;
+    background-image: url(img/slider2.png);
+}
+
+.slider-content .slider .slider-text .slider-tag {
+    color: #e53935;
+}
+
+/*Эксклюзивный товар*/
+.exclusive-product {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    height: 570px;
+}
+
+.exclusive-prod-big {
+    width: 570px;
+    height: 570px;
+    position: relative;
+    float: left;
+}
+
+.exclusive-prod-big:hover .ecxlusive-prod-text {
+    display: block;
+}
+
+.ecxlusive-prod-text {
+    position: absolute;
+    top: 185px;
+    left: 30px;
+    width: 340px;
+}
+
+.excl-prod-tag {
+    color: #1e88e5;
+    margin-bottom: 20px;
+}
+
+.excl-prod-name {
+    margin-bottom: 20px;
+}
+
+.excl-prod-description {
+    margin-bottom: 20px;
+}
+
+.excl-prod {
+    float: left;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+
+/*Мобильное приложение*/
+.mobile-app {
+    height: 516px;
+    position: relative;
+}
+
+.content-mobile {
+    position: absolute;
+    top: 120px;
+    width: 470px;
+}
+
+.mobile-tag {
+    color: #6c6c6c;
+    margin-bottom: 20px;
+}
+
+.mobile-name {
+    color: #212121;
+    font-weight: 100;
+    font-size: 58px;
+    text-transform: uppercase;
+    line-height: 72px;
+    height: 140px;
+}
+
+.mobile-description {
+    font-size: 22px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.app-links {
+    margin-right: 10px;
+    opacity: 0.9;
+}
+.app-links:hover {
+    opacity: 1;
+}
+
+/*Локация контакты*/
+.location {
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+.location-card{
+    height: 370px;
+    width: 370px;
+    float: left;
+    outline: 1px solid #a6a6a6;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+.location-card:nth-child(3n+1){
+    margin-left: 0;
+}
+.location-card img {
+    margin-top: 45px;
+    margin-left: 165px;
+}
+.location-card-details>h4,
+.location-card-details>p
+{
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+}
+.location-card-details h4 {
+    margin-top: 15px;
+    color: #6c6c6c;
+}
+.location-card-details p:last-child {
+    color: #6c6c6c;
+}
+
+
+.location-card>h4 {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 30px;
+    
+    font-size: 22px;
+}
+/*Детальное описание продукта*/
+    .adout-product {
+        margin-top: 70px;
+    }
+    .image-product {
+        width: 570px;
+        float: left;
+        position: relative;
+    }
+    .small-image-block {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .small-image {
+        height: 70px;
+        width: 70px;
+    }
+    .selected-image {
+        height: 570px;
+        width: 570px;
+    }
+    .small-image:hover {
+        opacity: 0.7;
+    }
+    .description-product {
+        margin-left: 60px;
+        width: 540px;
+        float: right;
+        text-align: center;
+    }
+    .description-product h3 {
+        font-weight: bold;
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: #212121;
+    }
+
+    .status {
+        font-weight: bold;
+        color: #e53935;
+        font-size: 18px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+    .price {
+        font-weight: 300;
+        font-size: 48px;
+        margin-bottom: 30px;
+    }
+
+    .btn-product {
+        border-radius: 35px;
+        width: 510px;
+        height: 70px;
+        line-height: 70px;
+        background-color: #f44336;
+        color: #fff;
+        margin-bottom: 30px;  
+    }
+    .details-info-product {
+        text-align: left;
+        font-size: 16;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+
+/*Футер*/
+footer {
+    position: relative;
+    height: 384px;
+    background-color: #f7f7f7;
+}
+
+.footer-content {
+    padding-top: 120px;
+    height: 144px;
+}
+
+.footer-bottom {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.footer-content h3 {
+    text-transform: uppercase;
+    color: #6c6c6c;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.footer-content p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #212121;
+}
+
+.contact-us {
+    width: 270px;
+    height: 144px;
+    float: left;
+    margin-right: 30px;
+}
+
+.useful-info {
+    width: 470px;
+    height: 144px;
+    float: left;
+    margin-right: 30px;
+}
+
+.subscribe {
+    width: 370px;
+    height: 144px;
+    float: left;
+}
+
+.send {
+    margin-top: 15px;
+    width: 370px;
+    min-height: 48px;
+    border: 1px solid #d9dee1;
+    background-color: white;
+}
+
+.subscribe input[type="email"] {
+    width: 315px;
+    height: 48px;
+    font-size: 14px;
+    color: #212121;
+    font-weight: 300;
+    padding-left: 20px;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+
+}
+
+.subscribe input[type="submit"] {
+    float: right;
+    width: 22px;
+    height: 22px;
+    margin-top: 14px;
+    margin-right: 13px;
+    border: none;
+    background: url(img/submit.png) no-repeat;
+}
+.subscribe input[type="submit"]:hover{
+    cursor: pointer
+} 
+.useful-info a {
+    text-decoration: none;
+    display: inline-block;
+    color: #212121;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 14px;
+    opacity: 0.9;
+    width: 185px;
+}
+
+.useful-info a:hover { 
+    opacity: 1;
+}
+
+
+.first-row {
+    width: 235px;
+    float: left;
+}
+
+.footer-bottom p:first-of-type {
+    float: left;
+}
+
+.footer-bottom p:last-of-type {
+    float: right;
+}
+
+.footer-bottom .social-link {
+    float: left;
+    margin-left: 150px;
+}
+
+.footer-bottom p {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #6c6c6c;
+    font-weight: bold;
+    margin-top: 7px;
+}
